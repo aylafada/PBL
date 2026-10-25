@@ -1,7 +1,4 @@
 /* ========================================
-   BRAWIJAYA STREET FOOD
-   CSS biasa, tanpa framework
-
    Daftar isi
    1. Token & reset
    2. Navbar beranda
@@ -21,6 +18,8 @@
 /* ========================================
    1. TOKEN & RESET
 ======================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&display=swap");
 
 :root {
     --dark: #14110e;
@@ -163,7 +162,7 @@ h1, h2, h3 { font-family: var(--font-head); letter-spacing: -0.02em; }
     background:
         radial-gradient(60% 80% at 88% 8%, rgba(245, 166, 35, 0.14), transparent 60%),
         linear-gradient(rgba(20, 17, 14, 0.88), rgba(20, 17, 14, 0.94)),
-        url("../img/background.jpg") center / cover no-repeat,
+        url("../img/bg.jpg") center / cover no-repeat,
         var(--dark);
 }
 
@@ -1113,60 +1112,252 @@ summary:focus-visible {
     mask: var(--i) center / contain no-repeat;
 }
 
-.ic-home { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 11l9-8 9 8'/%3E%3Cpath d='M5 10v10h5v-6h4v6h5V10'/%3E%3C/svg%3E"); }
-.ic-store { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 9l1.5-5h15L21 9'/%3E%3Cpath d='M3 9a3 3 0 0 0 6 0 3 3 0 0 0 6 0 3 3 0 0 0 6 0'/%3E%3Cpath d='M5 12v8h14v-8'/%3E%3Cpath d='M10 20v-5h4v5'/%3E%3C/svg%3E"); }
-.ic-plus { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 5v14M5 12h14'/%3E%3C/svg%3E"); }
-.ic-file { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z'/%3E%3Cpath d='M14 3v5h5M9 13h6M9 17h6'/%3E%3C/svg%3E"); }
-.ic-logout { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4'/%3E%3Cpath d='M16 17l5-5-5-5M21 12H9'/%3E%3C/svg%3E"); }
-.ic-search { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cpath d='M21 21l-4.35-4.35'/%3E%3C/svg%3E"); }
-.ic-user { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2'/%3E%3Ccircle cx='12' cy='7' r='4'/%3E%3C/svg%3E"); }
-.ic-lock { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='4' y='11' width='16' height='10' rx='2'/%3E%3Cpath d='M8 11V7a4 4 0 0 1 8 0v4'/%3E%3C/svg%3E"); }
-.ic-key { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='7.5' cy='15.5' r='5.5'/%3E%3Cpath d='M21 2l-9.6 9.6M15.5 7.5l3 3L22 7l-3-3'/%3E%3C/svg%3E"); }
-.ic-eye { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z'/%3E%3Ccircle cx='12' cy='12' r='3'/%3E%3C/svg%3E"); }
-.ic-eye-off { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 3l18 18'/%3E%3Cpath d='M10.6 5.1A10 10 0 0 1 12 5c6.5 0 10 7 10 7a17 17 0 0 1-3.2 4.1M6.6 6.6A16 16 0 0 0 2 12s3.5 7 10 7a9.7 9.7 0 0 0 5.4-1.6M9.9 9.9a3 3 0 0 0 4.2 4.2'/%3E%3C/svg%3E"); }
-.ic-id { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='5' width='18' height='14' rx='2'/%3E%3Ccircle cx='8.5' cy='10.5' r='1.8'/%3E%3Cpath d='M5.5 16c.5-1.5 1.5-2 3-2s2.5.5 3 2M14 9.5h4M14 13.5h4'/%3E%3C/svg%3E"); }
-.ic-phone-mobile { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='6' y='2' width='12' height='20' rx='2'/%3E%3Cpath d='M11 18h2'/%3E%3C/svg%3E"); }
-.ic-card { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='2' y='5' width='20' height='14' rx='2'/%3E%3Cpath d='M2 10h20M6 15h4'/%3E%3C/svg%3E"); }
-.ic-pin { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z'/%3E%3Ccircle cx='12' cy='10' r='2.5'/%3E%3C/svg%3E"); }
-.ic-arrow-left { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M19 12H5M12 19l-7-7 7-7'/%3E%3C/svg%3E"); }
-.ic-arrow-right { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12h14M12 5l7 7-7 7'/%3E%3C/svg%3E"); }
-.ic-arrow-up-right { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M7 17L17 7M8 7h9v9'/%3E%3C/svg%3E"); }
-.ic-mail { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='5' width='18' height='14' rx='2'/%3E%3Cpath d='M3 7l9 6 9-6'/%3E%3C/svg%3E"); }
-.ic-check { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6L9 17l-5-5'/%3E%3C/svg%3E"); }
-.ic-shield { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 2l8 3v6c0 5-3.5 9-8 11-4.5-2-8-6-8-11V5z'/%3E%3Cpath d='M9 12l2 2 4-4'/%3E%3C/svg%3E"); }
-.ic-utensils { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 2v7a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V2M7 2v20M21 15V2a5 5 0 0 0-5 5v6a2 2 0 0 0 2 2h3zM21 15v7'/%3E%3C/svg%3E"); }
-.ic-cart { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='9' cy='20' r='1.5'/%3E%3Ccircle cx='18' cy='20' r='1.5'/%3E%3Cpath d='M2 3h3l2.7 12.4a2 2 0 0 0 2 1.6h8.6a2 2 0 0 0 2-1.5L22 7H6'/%3E%3C/svg%3E"); }
-.ic-soup { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 12h18a9 9 0 0 1-18 0z'/%3E%3Cpath d='M8 21h8M8 8c0-1.5 1-1.5 1-3M12 8c0-1.5 1-1.5 1-3M16 8c0-1.5 1-1.5 1-3'/%3E%3C/svg%3E"); }
-.ic-box { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 8l-9-5-9 5v8l9 5 9-5z'/%3E%3Cpath d='M3 8l9 5 9-5M12 13v8'/%3E%3C/svg%3E"); }
-.ic-cash { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='2' y='6' width='20' height='12' rx='2'/%3E%3Ccircle cx='12' cy='12' r='3'/%3E%3Cpath d='M6 12h.01M18 12h.01'/%3E%3C/svg%3E"); }
-.ic-bell { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9'/%3E%3Cpath d='M10.3 21a1.94 1.94 0 0 0 3.4 0'/%3E%3C/svg%3E"); }
-.ic-clock { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Cpath d='M12 7v5l3 2'/%3E%3C/svg%3E"); }
-.ic-trend { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M22 7l-8.5 8.5-5-5L2 17'/%3E%3Cpath d='M16 7h6v6'/%3E%3C/svg%3E"); }
-.ic-calendar { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2'/%3E%3Cpath d='M16 2v4M8 2v4M3 10h18'/%3E%3C/svg%3E"); }
-.ic-trophy { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M8 21h8M12 17v4M7 4h10v6a5 5 0 0 1-10 0z'/%3E%3Cpath d='M7 6H4v1a3 3 0 0 0 3 3M17 6h3v1a3 3 0 0 1-3 3'/%3E%3C/svg%3E"); }
-.ic-clipboard { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='8' y='2' width='8' height='4' rx='1'/%3E%3Cpath d='M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2M9 12h6M9 16h4'/%3E%3C/svg%3E"); }
-.ic-armchair { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 11V8a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3v3'/%3E%3Cpath d='M3 13a2 2 0 0 1 4 0v2h10v-2a2 2 0 0 1 4 0v5H3z'/%3E%3Cpath d='M6 18v3M18 18v3'/%3E%3C/svg%3E"); }
-.ic-building { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 21V4a1 1 0 0 1 1-1h9a1 1 0 0 1 1 1v17M15 9h4a1 1 0 0 1 1 1v11M2 21h20M8 7h3M8 11h3M8 15h3'/%3E%3C/svg%3E"); }
-.ic-receipt { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 3h14v18l-2.5-1.5L14 21l-2-1.5L9.5 21 7.5 19.5 5 21z'/%3E%3Cpath d='M9 8h6M9 12h6M9 16h3'/%3E%3C/svg%3E"); }
-.ic-check-circle { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Cpath d='M8 12l3 3 5-6'/%3E%3C/svg%3E"); }
-.ic-x-circle { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Cpath d='M9 9l6 6M15 9l-6 6'/%3E%3C/svg%3E"); }
-.ic-pause { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Cpath d='M10 9v6M14 9v6'/%3E%3C/svg%3E"); }
-.ic-alert { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3L2 20h20z'/%3E%3Cpath d='M12 10v4M12 17h.01'/%3E%3C/svg%3E"); }
-.ic-printer { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9V3h12v6'/%3E%3Cpath d='M6 18H4a1 1 0 0 1-1-1v-6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6a1 1 0 0 1-1 1h-2'/%3E%3Crect x='6' y='14' width='12' height='7'/%3E%3C/svg%3E"); }
-.ic-info { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Cpath d='M12 11v5M12 8h.01'/%3E%3C/svg%3E"); }
-.ic-save { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 3h11l4 4v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z'/%3E%3Cpath d='M7 3v5h8V3M7 21v-7h10v7'/%3E%3C/svg%3E"); }
-.ic-dot { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='5' fill='black'/%3E%3C/svg%3E"); }
-.ic-phone { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M22 17v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 2 4.2 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7A2 2 0 0 1 22 17z'/%3E%3C/svg%3E"); }
-.ic-chat { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 12a8 8 0 0 1-11.6 7.1L3 21l1.9-6.4A8 8 0 1 1 21 12z'/%3E%3C/svg%3E"); }
-.ic-heart { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 21s-8-5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6-8 11-8 11z' fill='black'/%3E%3C/svg%3E"); }
-.ic-flame { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 22a7 7 0 0 0 7-7c0-3-2-5-3.5-7-1-1.3-1.5-3-1.5-5-3 2-6 5.5-6 9-1.5-.5-2-2-2-3-1.5 1.5-2 3.5-2 6a7 7 0 0 0 8 7z'/%3E%3C/svg%3E"); }
-.ic-coffee { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 8h13v7a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z'/%3E%3Cpath d='M17 10h1.5a2.5 2.5 0 0 1 0 5H17M8 2v3M12 2v3'/%3E%3C/svg%3E"); }
-.ic-leaf { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 20c0-9 5-15 15-16 0 10-6 15-15 16z'/%3E%3Cpath d='M5 20c2-5 5-8 9-10'/%3E%3C/svg%3E"); }
-.ic-glass { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 3h12l-1.5 17a1 1 0 0 1-1 1h-7a1 1 0 0 1-1-1z'/%3E%3Cpath d='M6.5 9h11M14 3l2-2'/%3E%3C/svg%3E"); }
-.ic-dumpling { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 16a9 8 0 0 1 18 0z'/%3E%3Cpath d='M6 16V14M10 16v-3M14 16v-3M18 16v-2M5 20h14'/%3E%3C/svg%3E"); }
-.ic-cookie { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3a9 9 0 1 0 9 9 4 4 0 0 1-4-4 4 4 0 0 1-5-5z'/%3E%3Cpath d='M8 11h.01M12 16h.01M16 14h.01M9 15h.01'/%3E%3C/svg%3E"); }
-.ic-fish { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2 12s4-7 11-7c4 0 7 3 9 7-2 4-5 7-9 7-7 0-11-7-11-7z'/%3E%3Cpath d='M17 11h.01M7 12c1 1 1 3 0 4'/%3E%3C/svg%3E"); }
-.ic-citrus { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Cpath d='M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6L5.6 18.4'/%3E%3C/svg%3E"); }
-.ic-cup { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 8h14l-1.5 12a1 1 0 0 1-1 1h-9a1 1 0 0 1-1-1z'/%3E%3Cpath d='M4 8h16M12 8V3l3-1'/%3E%3C/svg%3E"); }
-.ic-wheat { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 22V9M12 9c-3 0-5-2-5-5 3 0 5 2 5 5zM12 9c3 0 5-2 5-5-3 0-5 2-5 5zM12 15c-3 0-5-2-5-5 3 0 5 2 5 5zM12 15c3 0 5-2 5-5-3 0-5 2-5 5z'/%3E%3C/svg%3E"); }
-.ic-at { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='4'/%3E%3Cpath d='M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-4 8'/%3E%3C/svg%3E"); }
+/* =========================================================
+   IKON (versi ringkas: 18 ikon yang benar-benar tampil)
+
+   Cara kerja:
+   - Tiap ikon = 1 gambar SVG yang ditulis sebagai teks (data URI).
+   - Dipakai di HTML dengan:  <i class="ic ic-search"></i>
+   - Gambar ikon dipakai sebagai "cetakan" (mask), lalu diwarnai
+     sesuai warna teks di sekitarnya (background-color: currentColor).
+   ========================================================= */
+
+/* Ikon fungsi (tetap tampil di halaman) */
+.ic-search { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cpath d='M21 21l-4.35-4.35'/%3E%3C/svg%3E"); } /* kolom cari */
+.ic-eye { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z'/%3E%3Ccircle cx='12' cy='12' r='3'/%3E%3C/svg%3E"); } /* tombol lihat password */
+.ic-eye-off { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 3l18 18'/%3E%3Cpath d='M10.6 5.1A10 10 0 0 1 12 5c6.5 0 10 7 10 7a17 17 0 0 1-3.2 4.1M6.6 6.6A16 16 0 0 0 2 12s3.5 7 10 7a9.7 9.7 0 0 0 5.4-1.6M9.9 9.9a3 3 0 0 0 4.2 4.2'/%3E%3C/svg%3E"); } /* tombol sembunyikan password */
+.ic-arrow-left { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M19 12H5M12 19l-7-7 7-7'/%3E%3C/svg%3E"); } /* tombol Kembali */
+.ic-arrow-up-right { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M7 17L17 7M8 7h9v9'/%3E%3C/svg%3E"); } /* tautan Lihat lokasi */
+.ic-heart { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 21s-8-5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6-8 11-8 11z' fill='black'/%3E%3C/svg%3E"); } /* Made with ♥ */
+.ic-dot { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='5' fill='black'/%3E%3C/svg%3E"); } /* titik di badge Sistem Demo */
+
+/* Ikon lapak (pengganti sementara sebelum logo lapak ada) */
+.ic-flame { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 22a7 7 0 0 0 7-7c0-3-2-5-3.5-7-1-1.3-1.5-3-1.5-5-3 2-6 5.5-6 9-1.5-.5-2-2-2-3-1.5 1.5-2 3.5-2 6a7 7 0 0 0 8 7z'/%3E%3C/svg%3E"); } /* sate */
+.ic-soup { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 12h18a9 9 0 0 1-18 0z'/%3E%3Cpath d='M8 21h8M8 8c0-1.5 1-1.5 1-3M12 8c0-1.5 1-1.5 1-3M16 8c0-1.5 1-1.5 1-3'/%3E%3C/svg%3E"); } /* bakso, soto, mie ayam */
+.ic-glass { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 3h12l-1.5 17a1 1 0 0 1-1 1h-7a1 1 0 0 1-1-1z'/%3E%3Cpath d='M6.5 9h11M14 3l2-2'/%3E%3C/svg%3E"); } /* es dawet, es kelapa */
+.ic-utensils { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 2v7a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V2M7 2v20M21 15V2a5 5 0 0 0-5 5v6a2 2 0 0 0 2 2h3zM21 15v7'/%3E%3C/svg%3E"); } /* nasi goreng */
+.ic-coffee { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 8h13v7a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z'/%3E%3Cpath d='M17 10h1.5a2.5 2.5 0 0 1 0 5H17M8 2v3M12 2v3'/%3E%3C/svg%3E"); } /* kopi */
+.ic-leaf { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 20c0-9 5-15 15-16 0 10-6 15-15 16z'/%3E%3Cpath d='M5 20c2-5 5-8 9-10'/%3E%3C/svg%3E"); } /* pecel */
+.ic-dumpling { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 16a9 8 0 0 1 18 0z'/%3E%3Cpath d='M6 16V14M10 16v-3M14 16v-3M18 16v-2M5 20h14'/%3E%3C/svg%3E"); } /* siomay */
+.ic-citrus { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Cpath d='M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6L5.6 18.4'/%3E%3C/svg%3E"); } /* rujak */
+.ic-cup { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 8h14l-1.5 12a1 1 0 0 1-1 1h-9a1 1 0 0 1-1-1z'/%3E%3Cpath d='M4 8h16M12 8V3l3-1'/%3E%3C/svg%3E"); } /* wedang */
+.ic-fish { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2 12s4-7 11-7c4 0 7 3 9 7-2 4-5 7-9 7-7 0-11-7-11-7z'/%3E%3Cpath d='M17 11h.01M7 12c1 1 1 3 0 4'/%3E%3C/svg%3E"); } /* gorengan */
+.ic-cookie { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3a9 9 0 1 0 9 9 4 4 0 0 1-4-4 4 4 0 0 1-5-5z'/%3E%3Cpath d='M8 11h.01M12 16h.01M16 14h.01M9 15h.01'/%3E%3C/svg%3E"); } /* martabak */
+
+/* ---------- 1. Font, warna, dan ukuran teks ---------- */
+:root {
+    --font-head: 'Bricolage Grotesque', 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
+    --text: #e8e1d6;
+    --muted: #b8afa2;                     
+    --logo: url("../img/logo.svg");
+
+body { font-size: 16px; }
+input::placeholder, textarea::placeholder { color: #a39a8d; }
+
+.nav-link            { font-size: 15px; }
+.dashboard-nav a     { font-size: 0.95rem; }
+.stat-card p         { font-size: 0.9rem; }
+.menu-content p,
+.stall-info p        { font-size: 0.9rem; }
+.cart-price          { font-size: 0.85rem; }
+.footer-column p     { font-size: 15px; }
+.footer-bottom p     { font-size: 14px; }
+.status-label        { font-size: 13px; }
+.copy                { font-size: 0.85rem; }
+.auth-footer         { font-size: 0.85rem; }
+.auth-information > div { font-size: 0.9rem; }
+.kuliner-tags li     { font-size: 0.85rem; }
+th                   { font-size: 0.8125rem; }
+.page-heading h1     { font-size: 2rem; }
+
+/* ---------- 2. Tombol: minimal 44 px supaya mudah ditekan ---------- */
+.btn-primary, .btn-secondary, .btn-danger, .btn-success {
+    min-height: 44px;
+    font-size: 0.95rem;
+}
+td .btn-secondary, td .btn-danger, td .btn-success { min-height: 40px; font-size: 0.85rem; }
+.qty button { width: 38px; height: 38px; }
+.sticky .qty button { width: 34px; height: 34px; }
+
+/* Tombol yang tidak bisa ditekan (misalnya stok habis) */
+.menu-content > button:disabled {
+    background: var(--card-2);
+    border-color: var(--card-2);
+    color: var(--muted);
+    opacity: 1;
+}
+
+input:focus-visible, select:focus-visible, textarea:focus-visible {
+    outline: 2px solid var(--gold-light);
+    outline-offset: 2px;
+}
+
+/* ---------- 3. Status Buka/Tutup: kata + warna, bentuk pil ---------- */
+.badge {
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-size: 0.8125rem;
+    font-weight: 600;
+}
+.badge-success { color: #7ddc92; }
+.badge-danger  { color: #ff9a92; }
+
+/* ---------- 4. Ikon: sembunyikan yang hanya hiasan ---------- */
+.ic { display: none; }
+
+/* Ikon yang fungsinya penting tetap tampil */
+.search-box .ic,
+.password-toggle .ic,
+.bn-back .ic,
+.footer-link .ic,
+.footer-tagline .ic,
+.badge .ic,
+.stall-avatar .ic { display: inline-block; }
+
+.footer-icon { display: none; }
+.footer-heading { margin-bottom: 12px; }
+
+/* Kartu statistik: angka dulu, tanpa kotak ikon */
+.stat-icon { display: none; }
+.stat-card { display: block; }
+.stat-card h3 { font-family: var(--font-head); font-size: 2rem; letter-spacing: -0.03em; }
+
+/* ---------- 5. Logo ---------- */
+.brand-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 0;
+    background: var(--logo) center / contain no-repeat;
+    color: transparent;
+    font-size: 0;
+}
+
+.auth-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 0;
+    background: var(--logo) center / contain no-repeat;
+}
+
+/* ---------- 6. Beranda: rata tengah, foto sebagai latar ---------- */
+.hero {
+    justify-content: center;
+    padding: 72px var(--gutter) 110px;
+    text-align: center;
+    background:
+        linear-gradient(rgba(15, 13, 11, 0.72), rgba(15, 13, 11, 0.8)),
+        url("../img/background.jpg") center / cover no-repeat,
+        var(--dark);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 720px;
+}
+
+/* Logo besar di atas "Selamat Datang" */
+.hero-content::before {
+    content: "";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 18px;
+    background: var(--logo) center / contain no-repeat;
+}
+
+.welcome-label { justify-content: center; font-size: 14px; }
+.welcome-label::before,
+.welcome-label::after { content: ""; width: 32px; height: 1.5px; background: var(--gold); }
+
+.hero h1 { font-size: clamp(2.4rem, 6vw, 3.6rem); }
+.hero h1 span { display: inline; color: inherit; }
+.hero-description { margin-inline: auto; font-size: 1.1rem; color: var(--text); }
+.hero-address { justify-content: center; margin-inline: auto; font-size: 15px; color: var(--muted); }
+.hero-buttons { justify-content: center; }
+.hero-buttons .btn { min-width: 200px; min-height: 52px; font-size: 15px; }
+.hero-note { margin-inline: auto; font-size: 14px; text-align: center; }
+
+/* Hiasan: titik-titik emas di pojok (samar, tidak menimpa tulisan) */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: 0.3;
+    pointer-events: none;
+    background-image: radial-gradient(circle, var(--gold) 1.5px, transparent 1.6px);
+    background-size: 16px 16px;
+    -webkit-mask-image: linear-gradient(135deg, #000 0, transparent 22%, transparent 78%, #000 100%);
+    mask-image: linear-gradient(135deg, #000 0, transparent 22%, transparent 78%, #000 100%);
+}
+
+/* Hiasan: tepi bergelombang seperti ujung kanopi lapak (warnanya = warna footer di bawahnya) */
+.hero::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 14px;
+    pointer-events: none;
+    background: radial-gradient(circle at 50% 0, transparent 11px, var(--card) 11.5px) repeat-x;
+    background-size: 24px 14px;
+}
+
+/* ---------- 7. Kuliner & lapak ---------- */
+.kuliner-hero { text-align: center; }
+.kuliner-hero p { margin-inline: auto; font-size: 1.05rem; }
+
+/* Pembatas garis-titik-garis di bawah judul */
+.kuliner-hero h1::after {
+    content: "";
+    display: block;
+    width: 110px;
+    height: 8px;
+    margin: 16px auto 0;
+    background:
+        radial-gradient(circle, var(--gold) 3.5px, transparent 4px) center / 8px 8px no-repeat,
+        linear-gradient(rgba(245, 166, 35, 0.6), rgba(245, 166, 35, 0.6)) left center / 36px 1.5px no-repeat,
+        linear-gradient(rgba(245, 166, 35, 0.6), rgba(245, 166, 35, 0.6)) right center / 36px 1.5px no-repeat;
+}
+
+/* Hiasan: garis belang di atas kartu, seperti kanopi */
+.kuliner-card, .stall-card { position: relative; overflow: hidden; }
+.kuliner-card { padding-top: 30px; }
+.stall-card   { padding-top: 26px; }
+.kuliner-card::before,
+.stall-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background: repeating-linear-gradient(90deg, rgba(245, 166, 35, 0.6) 0 14px, var(--card-2) 14px 28px);
+}
+
+/* Logo lapak: bulat. Boleh diisi <img>, kalau belum ada tampil ikon biasa */
+.stall-avatar { width: 56px; height: 56px; border-radius: 50%; overflow: hidden; }
+.stall-avatar img { display: block; width: 100%; height: 100%; object-fit: cover; }
+
+/* ---------- 8. Menu dengan foto ---------- */
+.menu-image {
+    height: 150px;
+    overflow: hidden;
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+.menu-image img { grid-area: 1 / 1; display: block; width: 100%; height: 100%; object-fit: cover; }
+.menu-image:not(:has(img))::after { content: "Foto menu"; }
+.menu-meta strong { font-family: var(--font-head); font-size: 1.3rem; font-weight: 800; }
+
+/* ---------- 9. HP ---------- */
+@media (max-width: 600px) {
+    .hero { padding: 48px 20px 90px; }
+    .hero::before { display: none; }
+    .hero-content::before { width: 56px; height: 56px; }
+    .hero-buttons .btn { width: 100%; }
+    .kuliner-hero h1::after { margin-top: 12px; }
+}
+}
