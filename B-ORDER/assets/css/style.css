@@ -863,7 +863,7 @@ footer.copy { border-top: 1px solid var(--line); }
     min-height: 100vh;
     background:
         linear-gradient(rgba(20, 17, 14, 0.92), rgba(20, 17, 14, 0.96)),
-        url("../img/background.jpg") center / cover,
+        url("../img/bg.jpg") center / cover,
         var(--dark);
 }
 
@@ -997,7 +997,7 @@ footer.copy { border-top: 1px solid var(--line); }
     background:
         radial-gradient(50% 90% at 90% 0%, rgba(245, 166, 35, 0.12), transparent 60%),
         linear-gradient(rgba(20, 17, 14, 0.9), rgba(20, 17, 14, 0.95)),
-        url("../img/background.jpg") center / cover,
+        url("../img/bg.jpg") center / cover,
         var(--dark);
 }
 
@@ -1246,7 +1246,7 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
     text-align: center;
     background:
         linear-gradient(rgba(15, 13, 11, 0.72), rgba(15, 13, 11, 0.8)),
-        url("../img/background.jpg") center / cover no-repeat,
+        url("../img/bg.jpg") center / cover no-repeat,
         var(--dark);
 }
 
